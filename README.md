@@ -8,3 +8,5 @@
 ## Topics covered
 - CSS3: animation
 - Sass
+- Responsive design
+- Responsive images
