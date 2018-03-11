@@ -19,6 +19,10 @@
         color: inherit;
         transition: all .3s;
 
+        @include respond(phone) {
+            width: 100%;
+        }
+
         &:focus {
             outline: none;
             background-color: $color-white;
@@ -55,6 +59,11 @@
     &__radio-group {
         width: 49%;
         display: inline-block;
+
+        @include respond(phone) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
     }
 
     &__radio-input {
