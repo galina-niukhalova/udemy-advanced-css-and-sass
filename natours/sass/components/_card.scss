@@ -191,7 +191,10 @@
         font-weight: 100;
     }
 
-    @include respond(tab-port) {
+    // (hover: none) - devices which doesn't support hover - mobile, laptop
+    // (hover: hover) - devices which support hover - desktop
+    @media only screen and (max-width: 56.25em),
+           only screen and (hover: none) { 
         height: auto;
         border-radius: 3px;
         background-color: $color-white;  
