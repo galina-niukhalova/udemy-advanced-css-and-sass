@@ -10,3 +10,4 @@
 - Sass
 - Responsive design
 - Responsive images
+- Flexbox
