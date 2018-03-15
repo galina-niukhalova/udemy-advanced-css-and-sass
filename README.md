@@ -11,3 +11,4 @@
 - Responsive design
 - Responsive images
 - Flexbox
+- CSS Grid
