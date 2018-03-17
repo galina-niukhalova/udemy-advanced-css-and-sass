@@ -12,3 +12,5 @@
 - Responsive images
 - Flexbox
 - CSS Grid
+
+![certificate](https://github.com/galina-niukhalova/udemy-advanced-css-and-sass/blob/master/Udemy%20certificate.jpg)
