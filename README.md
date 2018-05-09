@@ -3,7 +3,7 @@
 **Course's author:** [Jonas Schmedtmann](https://www.facebook.com/jschmedtmann)
 
 ## Links
-- [Cource's website](https://www.udemy.com/advanced-css-and-sass/learn/v4/overview)
+- [Course's website](https://www.udemy.com/advanced-css-and-sass/learn/v4/overview)
 - [Demo](https://galina-niukhalova.github.io/udemy-advanced-css-and-sass)
 
 ## Topics covered
