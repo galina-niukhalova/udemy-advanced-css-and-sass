@@ -1,0 +1,114 @@
+.btn {
+    // use &, because <button> element doesn't have :link and :visited 
+    &,
+    &:link, 
+    &:visited {
+        padding: 1.5rem 4rem;
+        border-radius: 10rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        transition: all .2s;
+        font-size: $default-font-size;
+    
+        position: relative;
+
+        // for <button> element
+        border: none;
+        cursor: pointer;
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        /* offset x, offset y, bluer */
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        &::after {
+            /* increase the size x2 */
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    /* when we click on btn */
+    &:active, 
+    // for <bottom> element
+    &:focus {
+        outline: none;
+        /* regardaring of link state */
+        transform: translateY(-.1rem); 
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+
+    &--white {
+        color: $color-grey-dark;
+        background-color: $color-white;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--green {
+        color: $color-white;
+        background-color: $color-primary;
+
+        &:after {
+            background-color: $color-primary;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+    
+        /* btn::after - child of btn */
+        /* 100% of btn */
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    
+        transition: all .4s; 
+    }
+
+    &--animated {
+        /* 0.75 - delay */
+        animation: moveFromBottom 0.5s ease-out 0.75s;
+    
+        /* first position of animation will be apply before than animation starts*/
+        animation-fill-mode: backwards;
+    }
+}
+
+.btn-text {
+    &:link, 
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-primary;
+
+        // to set margin and padding
+        display: inline-block;
+
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}
