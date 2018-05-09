@@ -3,7 +3,8 @@
 **Course's author:** [Jonas Schmedtmann](https://www.facebook.com/jschmedtmann)
 
 ## Links
-- https://www.udemy.com/advanced-css-and-sass/learn/v4/overview
+- [Cource's website](https://www.udemy.com/advanced-css-and-sass/learn/v4/overview)
+- [Demo](https://galina-niukhalova.github.io/udemy-advanced-css-and-sass)
 
 ## Topics covered
 - CSS3: animation
